@@ -1,0 +1,103 @@
+@mixin pattern($bg-primary,$bg-secondary) {
+  background:
+          repeating-linear-gradient(
+                          -45deg,
+                          transparent,
+                          transparent 1em,
+                          rgba($bg-secondary,0.4) 0,
+                          rgba($bg-secondary,0.1) 2em,
+                          transparent 0,
+                          transparent 1em,
+                          rgba($bg-secondary,0.3) 0,
+                          rgba($bg-secondary,0.2) 4em,
+                          transparent 0,
+                          transparent 1em,
+                          rgba($bg-primary,0.6) 0,
+                          rgba($bg-primary,0.2) 2em
+          ),
+          repeating-linear-gradient(
+                          45deg,
+                          transparent,
+                          transparent 1em,
+                          rgba($bg-secondary,0.4) 0,
+                          rgba($bg-secondary,0.1) 2em,
+                          transparent 0,
+                          transparent 1em,
+                          rgba($bg-secondary,0.3) 0,
+                          rgba($bg-secondary,0.2) 4em,
+                          transparent 0,
+                          transparent 1em,
+                          rgba($bg-primary,0.4) 0,
+                          rgba($bg-primary,0.1) 2em
+          ), #FFF;
+  background-blend-mode: multiply;
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.signinButton {
+  background-color: rgba(45, 158, 45, 0.85);
+}
+
+.section--page {
+  min-height: 92vh;
+  padding-top: 120px;
+  @include pattern(#c0ebfa, #B0E9C5);
+}
+
+.custom-breadcrumb {
+  padding-top: 12px;
+  padding-left: 25px;
+  border: 1px solid rgba(0,0,0,0.125);
+  border-radius: 0.25rem;
+  background-color: #fff;
+  margin-bottom: 0;
+  width: 100%;
+  a {
+    color: #2a9f2a;
+  }
+}
+
+.page-item.active .page-link {
+  color: white !important;
+  background-color: rgba(45, 158, 45, 0.85) !important;
+  border-color: #198754 !important;
+}
+
+.page-link {
+  color: #198754 !important;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.page--container {
+  padding-bottom: 30px;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .section--page {
+    padding-top: 140px;
+  }
+}

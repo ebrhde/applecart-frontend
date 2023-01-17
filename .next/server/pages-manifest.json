@@ -1,0 +1,14 @@
+{
+  "/404": "pages/404.js",
+  "/500": "pages/500.js",
+  "/_app": "pages/_app.js",
+  "/about": "pages/about.js",
+  "/catalog/[alias]/[palias]": "pages/catalog/[alias]/[palias].js",
+  "/catalog/[alias]": "pages/catalog/[alias].js",
+  "/checkout": "pages/checkout.js",
+  "/": "pages/index.js",
+  "/orders/[id]": "pages/orders/[id].js",
+  "/orders": "pages/orders.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js"
+}

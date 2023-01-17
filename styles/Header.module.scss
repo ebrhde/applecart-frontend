@@ -1,0 +1,53 @@
+.header {
+    z-index: 99;
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.navbar_desktop {
+    padding: 0.5rem 1rem;
+    .logoImg {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+#userIcon {
+    width: 18px;
+    height: 18px;
+}
+
+.badge {
+    background-color: rgba(45,158,45,.85);
+    position: relative;
+    right: 0.7rem;
+    bottom: 1rem;
+    padding: 5px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.cart_desktop {
+    background: unset;
+    border: unset;
+    .cartIcon {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+.searchField_desktop {
+    width: 225px;
+    .searchIcon {
+        width: 15px;
+        height: 15px;
+    }
+    button {
+        background-color: rgba(45, 158, 45, 0.85);
+    }
+}

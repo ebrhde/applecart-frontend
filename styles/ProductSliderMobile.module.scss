@@ -1,0 +1,50 @@
+.thumbnails {
+  display: none;
+}
+
+.thumb {
+  min-width: 4.2rem;
+  min-height: 6rem;
+  position: relative;
+  max-width: 7.1rem;
+  margin: 0 5px;
+  padding: 5px 10px;
+  transition-duration: 1s;
+  cursor: pointer;
+
+  img {
+    width: 3rem;
+    height: 5rem;
+  }
+}
+
+.next_arrow, .prev_arrow {
+  position: absolute;
+  width: 25px;
+  z-index: 10;
+  height: 25px;
+  background-image: url("./../public/icons/arrow.svg");
+  cursor: pointer;
+}
+
+.prev_arrow {
+  transform: rotate(90deg);
+  top: 38px;
+  left: 30px;
+}
+
+.next_arrow {
+  top: 38px;
+  right: 30px;
+  transform: rotate(270deg);
+}
+
+@media (max-width: 768px) {
+  .thumbnails {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+    width: 70%;
+  }
+}

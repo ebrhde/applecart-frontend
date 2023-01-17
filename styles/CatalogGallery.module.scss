@@ -1,0 +1,45 @@
+.cat_card {
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgb(0, 0, 0) 38%, rgb(132, 132, 132));
+  border: none;
+  .cat_card_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(42, 159, 42, .4);
+    border-radius: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    p {
+      width: 80%;
+      background: #2E2F45;
+      display: table;
+      margin: auto;
+      border-radius: 5px;
+      mix-blend-mode: multiply;
+      padding: 5px 10px;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+    }
+  }
+  .cat_img {
+    width: 85%;
+    max-height: 95%;
+  }
+  &:hover {
+    .cat_card_overlay {
+      display: flex;
+    }
+  }
+}
